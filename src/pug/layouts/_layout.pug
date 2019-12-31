@@ -1,0 +1,56 @@
+//-
+	Main layout for the Trinetix test task
+	Version: 1.0
+	Created: 29.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: Serge Tiutin
+	Website: https://example.com
+
+include ../mixins/_mixins
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+		meta(name="format-detection", content="telephone=no")
+		//- Meta data mixin
+		block meta-data
+		//- Favicons
+		include ../includes/_favicons
+		//- Font Awesome
+		link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.3.1/css/all.css")
+		//- Bootstrap CSS
+		link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+		//- Main CSS file
+		link(rel="stylesheet", href="./css/main.min.css")
+		//- Additional and/or special style sheets
+		block extra-css
+	body
+		//- Scroll to top button
+		include ../includes/_scroll-top
+		//- Header
+		header.header
+			.container
+				.header-content
+					include ../includes/_site-logo
+					include ../includes/menus/_main-menu
+					include ../includes/burgers/_burger
+		include ../includes/menus/_mobile-menu
+		//- Main content
+		block main-content
+		//- Footer
+		footer.footer
+			include ../includes/footer-components/_top-footer
+			include ../includes/footer-components/_bottom-footer
+		//- jQuery
+		script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+		//- Popper JS
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+		//- Bootstrap JS
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+		//- Main Javascript / jQuery scripts
+		script(src="./js/common.js")
+		//- Additional Javascript / jQuery scripts
+		block extra-js

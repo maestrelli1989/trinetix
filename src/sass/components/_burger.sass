@@ -1,0 +1,44 @@
+.burger
+	font: inherit
+	display: none
+	overflow: visible
+	margin: 0px
+	padding: 0px
+	cursor: pointer
+	text-transform: none
+	color: inherit
+	border: 0
+	background-color: transparent
+	height: 22px
+	.burger-box
+		position: relative
+		display: inline-block
+		width: 34px
+		height: 22px
+		.burger-inner
+			position: absolute
+			top: 2px
+			width: 34px
+			height: 2px
+			border-radius: $secondary-radius
+			background-color: $corporate-white
+			&:before
+				position: absolute
+				display: block
+				content: ""
+				top: 10px
+				width: 34px
+				height: 2px
+				border-radius: $secondary-radius
+				background-color: $corporate-white
+			&:after
+				position: absolute
+				display: block
+				content: ""
+				top: 20px
+				width: 34px
+				height: 2px
+				border-radius: $secondary-radius
+				background-color: $corporate-white
+	&:hover
+		cursor: pointer

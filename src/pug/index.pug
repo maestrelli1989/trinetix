@@ -1,0 +1,71 @@
+//-
+	Services page markup for the Trinetix test task
+	Version: 1.0
+	Created: 29.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: Serge Tiutin
+	Website: https://example.com
+
+extends layouts/_layout.pug
+
+block meta-data
+	+meta-data(
+	'Website title', 
+	'Website description', 
+	'https://website.com/'
+	)
+
+block main-content
+	.page-headline-block
+		.container
+			h2 We work with forward businesses to create 
+				br
+				| new digital platforms, products and services.
+	.inner-page-wrapper.services-page
+		include includes/menus/_scroll-to-menu
+		.container.top-third
+			#all-block
+				h1 What We Do
+				p We launch different types of platforms and operating systems using distinguishes 
+					br
+					| of every platform or operating system as adventage and a powerful tool.
+		.divider-complex
+		.container.middle-third
+			.services-list
+				#mobile-apps-block.services-list__item
+					figure
+						img(src="./images/mobile-apps.png", alt="Mobile apps", title="Mobile apps")
+					h3 Mobile Apps
+					p We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.
+					+link-btn("button button--white", "javascript:void(0);", "Learn more", "Learn more")
+				#web-services-block.services-list__item
+					figure
+						img(src="./images/web-services.png", alt="Web services", title="Web services")
+					h3 Web Services
+					p We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.
+					+link-btn("button button--white", "javascript:void(0);", "Learn more", "Learn more")
+				#augmented-reality-block.services-list__item
+					figure
+						img(src="./images/augmented-reality.png", alt="Augmented Reality", title="Augmented Reality")
+					h3 Augmented Reality
+					p We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.
+					+link-btn("button button--white", "javascript:void(0);", "Learn more", "Learn more")
+				#design-block.services-list__item
+					figure
+						img(src="./images/design.png", alt="UX/UI Design", title="UX/UI Design")
+					h3 UX/UI Design
+					p We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.
+					+link-btn("button button--white", "javascript:void(0);", "Learn more", "Learn more")
+				#development-block.services-list__item
+					figure
+						img(src="./images/development.png", alt="Development", title="Development")
+					h3 Development
+					p We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.
+					+link-btn("button button--white", "javascript:void(0);", "Learn more", "Learn more")
+		.divider-simple
+		.container.bottom-third
+			h2 We enjoy what we do. 
+				br
+				| Working with smart people at great projects. Contact us if you want to work with us.
+			+link-btn("button button--blue", "javascript:void(0);", "Contact us", "Contact us")

@@ -1,0 +1,15 @@
+svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', viewBox="0 0 33 33", width='32px', height='32px')
+	defs
+		filter#Filter_linkedin(filterUnits='userSpaceOnUse', x='10.5px', y='8.5px', width='18px', height='19px')
+			feoffset(in='SourceAlpha', dx='1', dy='1.732')
+			fegaussianblur(result='blurOut', stdDeviation='1.414')
+			feflood(flood-color='rgb(0, 0, 0)', result='floodOut')
+			fecomposite(operator='atop', in='floodOut', in2='blurOut')
+			fecomponenttransfer
+				fefunca(type='linear', slope='0.4')
+			femerge
+				femergenode
+				femergenode(in='SourceGraphic')
+	path.linkedin-1(fill-rule='evenodd', stroke-width='1px', stroke='#ffffff', fill='#00172b', d='M18.000,3.801 C25.843,3.801 32.200,10.159 32.200,18.001 C32.200,25.844 25.843,32.202 18.000,32.202 C10.158,32.202 3.800,25.844 3.800,18.001 C3.800,10.159 10.158,3.801 18.000,3.801 Z')
+	g(filter='url(#Filter_linkedin)')
+		path.linkedin-2(fill-rule='evenodd', fill='#ffffff', d='M22.039,22.740 L22.039,18.097 C22.039,16.931 21.759,16.135 20.704,16.135 C19.899,16.135 19.348,16.671 19.137,17.190 C19.060,17.375 19.042,17.634 19.042,17.893 L19.042,22.740 L16.008,22.740 C16.008,22.740 16.046,14.473 16.008,13.660 L19.042,13.660 L19.042,15.291 C19.035,15.301 19.028,15.310 19.022,15.320 L19.042,15.320 L19.042,15.291 C19.429,14.700 20.429,13.644 21.977,13.644 C23.895,13.644 25.096,15.098 25.096,17.764 L25.096,22.740 L22.039,22.740 ZM11.455,13.660 L14.512,13.660 L14.512,22.740 L11.455,22.740 L11.455,13.660 ZM13.000,12.150 C12.165,12.150 11.488,11.473 11.488,10.638 C11.488,9.803 12.165,9.125 13.000,9.125 C13.834,9.125 14.511,9.803 14.511,10.638 C14.511,11.473 13.834,12.150 13.000,12.150 Z')

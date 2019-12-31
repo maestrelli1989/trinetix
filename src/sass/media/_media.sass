@@ -1,0 +1,238 @@
+/**
+	Media queries for the for the Trinetix test task
+	Version: 1.0
+	Created: 29.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: Serge Tiutin
+	Website: https://example.com
+	*/
+
+@media (min-width: 1400px)
+	
+	.container
+		max-width: 1200px
+
+@media screen and (max-width: 1200px)
+
+	.page-headline-block
+		.container
+			h2
+				br
+					display: none
+
+	.top-third
+		p
+			br
+				display: none
+
+	.middle-third
+		padding-top: 0px
+
+	.services-list
+		.services-list__item
+			max-width: 480px
+			figure
+				img
+					max-width: 385px
+			&:nth-child(3),
+			&:nth-child(4)
+				margin-bottom: 0px
+
+	.footer-menu
+		.footer-menu__link
+			margin-right: 18px
+
+@media screen and (max-width: 991px)
+
+	.container
+    	max-width: 950px
+
+	.services-list
+		.services-list__item
+			max-width: 460px
+			padding-left: 15px
+			padding-right: 15px
+			&:nth-child(3),
+			&:nth-child(4)
+				height: 650px
+
+	.footer-menu
+		.footer-menu__link
+			margin: 0px 15px 0px 0px
+
+@media screen and (max-width: 920px)
+
+	.top-third,
+	.middle-third,
+	.bottom-third
+		padding-left: 15px
+		padding-right: 15px
+
+	.services-list
+		.services-list__item
+			&:first-child,
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:last-child
+				height: auto
+				max-width: 100%
+	
+	.footer-menu
+		display: none
+
+@media screen and (max-width: 840px)
+
+	.copyright,
+	.social-menu
+		flex: 0 0 50%
+		max-width: 50%
+
+@media screen and (max-width: 767px)
+
+	h1
+		font-size: 34px
+		line-height: 1.3
+		padding: 10px 0px
+
+	h2
+		font-size: 20px
+		line-height: 1.5
+		padding: 10px 0px
+
+	h3
+		font-size: 28px
+		line-height: 1.3
+		padding: 10px 0px
+
+	.divider-complex
+		height: 18px
+
+	.menu
+		.menu__trigger
+			.menu__mobile-hide
+				display: none
+
+	.main-menu
+		display: none
+	
+	.burger
+		display: block
+
+	.page-headline-block
+		padding: 30px 0px
+
+	.top-third
+		padding: 30px 15px
+		p
+			font-size: 20px
+			line-height: 1.5
+
+	.middle-third
+		padding-bottom: 15px
+
+	.bottom-third
+		padding-bottom: 40px
+		.button--blue
+			margin-top: 0px
+	
+	.services-list
+		.services-list__item
+			p
+				font-size: 20px
+				line-height: 1.5
+			&:first-child
+				figure, h3, p, .button.button--white
+					margin-left: 0px
+				h3
+					padding-top: 10px
+				.button.button--white
+					margin-top: 10px
+			&:nth-child(2)
+				figure, h3, p, .button.button--white
+					margin-left: 0px
+				h3
+					padding-top: 10px
+				.button.button--white
+					margin-top: 10px
+			&:nth-child(3)
+				figure, h3, p, .button.button--white
+					margin-left: 0px
+				h3
+					padding-top: 10px
+				.button.button--white
+					margin-top: 10px
+			&:nth-child(4)
+				figure, h3, p, .button.button--white
+					margin-left: 0px
+				h3
+					padding-top: 10px
+				.button.button--white
+					margin-top: 10px
+			&:last-child
+				padding-bottom: 30px
+				figure, h3, p, .button.button--white
+					margin-left: 0px
+				h3
+					padding-top: 10px
+				.button.button--white
+					margin-top: 10px
+
+	.top-footer
+		.top-footer__col
+			&:last-child
+				display: none
+
+@media screen and (max-width: 576px)
+
+	.page-headline-block
+		display: none
+
+	.top-footer
+		.top-footer__col
+			&:nth-child(2), &:nth-child(3)
+				width: 50%
+			&:first-child
+				padding-bottom: 20px
+			p
+				font-size: 14px
+				a
+					line-height: 1.5
+					&:first-child
+						font-size: 14px
+					&:last-child
+						font-size: 15px
+
+	.copyright
+		order: 2
+		flex: 0 0 100%
+		max-width: 100%
+		.copyright__description
+			font-size: 15px
+	
+	.social-menu
+		order: 1
+		padding-left: 15px
+		padding-bottom: 20px
+		position: static
+		top: 0px
+		flex: 0 0 100%
+		max-width: 100%
+
+	.top-footer
+		padding: 20px 0px
+
+	.bottom-footer
+		padding: 19px 0px 20px
+
+@media screen and (max-width: 360px)
+
+	.divider-complex
+		height: 14px
+
+	.services-list
+		.services-list__item
+			figure
+				img
+					max-width: 250px

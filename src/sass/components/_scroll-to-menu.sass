@@ -1,0 +1,35 @@
+.menu
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: flex-start
+	overflow: auto
+	white-space: nowrap
+	.menu__trigger
+		font-size: 14px
+		line-height: 60px
+		font-family: $primary-bold
+		text-transform: uppercase
+		color: $corporate-white
+		transition: $primary-transition
+		position: relative
+		padding: 0px 20px
+		.menu__mobile-hide
+			padding: 0px
+			display: inline
+		&:after
+			position: absolute
+			display: block
+			content: ""
+			background-color: transparent
+			width: 100%
+			height: 4px
+			top: 56px
+			left: 0px
+			transition: $primary-transition
+		&:hover,
+		&.menu__trigger--active
+			color: $corporate-light-blue
+			cursor: pointer
+			&:after
+				background-color: $corporate-light-blue

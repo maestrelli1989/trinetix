@@ -1,0 +1,39 @@
+.main-menu
+	display: flex
+	flex-direction: row
+	.main-menu__item
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: center
+		position: relative
+		margin: 0px 44px 0px 0px
+		&:last-child
+			margin: 0px
+		.main-menu__link
+			color: $corporate-white
+			font-family: $primary-bold
+			font-weight: $bold-weight
+			text-align: center
+			text-transform: uppercase
+			transition: $primary-transition
+			&:hover
+				cursor: pointer
+			&.main-menu__link--default
+				font-size: 14px
+				line-height: 1.2
+				padding: 0px
+				&:hover
+					color: $corporate-light-blue
+			&.main-menu__link--special
+				font-size: 12px
+				line-height: 28px
+				background-color: $corporate-violet
+				border: 1px solid $corporate-white
+				width: 118px
+				height: 30px
+				border-radius: $primary-radius
+				letter-spacing: 1px
+				&:hover
+					background-color: $corporate-white
+					color: $corporate-violet

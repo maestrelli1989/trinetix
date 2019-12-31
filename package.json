@@ -1,0 +1,28 @@
+{
+  "name": "trinetix",
+  "version": "1.0.0",
+  "description": "Trinetix test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test\" && exit 1"
+  },
+  "author": "Serge Tiutin",
+  "owner": "Serge Tiutin",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp.spritesmith": "^6.9.0"
+  }
+}

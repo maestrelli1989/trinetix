@@ -1,0 +1,187 @@
+/**
+	Reset styles for the for the Trinetix test task
+	Version: 1.0
+	Created: 29.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: Serge Tiutin
+	Website: https://example.com
+	*/	
+
+*
+	margin: 0px
+	padding: 0px
+
+html
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+
+body
+	-moz-osx-font-smoothing: grayscale
+	-webkit-font-smoothing: antialiased
+	position: relative
+	width: 100%
+	min-width: 320px
+	font-family: "Roboto", sans-serif
+	font-size: 16px
+	line-height: 20px
+
+main,
+li
+	display: block
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+	margin: 0px
+
+ul,
+ol,
+dl
+	margin: 0px
+	padding: 0px
+	list-style-type: none
+
+dd,
+label,
+figure
+	margin: 0px
+	padding: 0px
+
+blockquote,
+q
+	quotes: none
+	margin: 0px
+	padding: 0px
+	&:before,
+	&:after
+		content: ''
+
+img
+	max-width: 100%
+	height: auto
+	border: 0px
+
+hr
+	box-sizing: content-box
+	height: 0px
+	overflow: visible
+
+pre,
+code,
+kbd,
+samp
+	margin: 0px
+	padding: 0px
+	font-family: monospace, monospace
+
+a
+	background-color: transparent
+	text-decoration: none
+	transition: $primary-transition
+	&:hover
+		cursor: pointer
+		text-decoration: none
+	&:focus
+		outline: 0
+
+strong,
+b
+	font-weight: $bold-weight
+
+progress
+	vertical-align: baseline
+
+details
+	display: block
+
+summary
+	display: list-item
+
+abbr[title],
+dfn[title]
+	border-bottom: none
+	text-decoration: underline
+	text-decoration: underline dotted
+	cursor: help
+
+textarea
+	overflow: auto
+	margin: 0px
+
+legend
+	box-sizing: border-box
+	color: inherit
+	display: table
+	max-width: 100%
+	padding: 0px
+	white-space: normal
+
+button,
+input,
+optgroup,
+select
+	margin: 0px
+
+button,
+input
+	overflow: visible
+
+button,
+select
+	text-transform: none
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"]
+	-webkit-appearance: button
+	transition: $primary-transition
+	overflow: visible
+	border: none
+	font: inherit
+	-webkit-font-smoothing: inherit
+	letter-spacing: inherit
+	background: none
+	cursor: pointer
+	&::-moz-focus-inner
+		border-style: none
+		padding: 0px
+	&:-moz-focusring
+		outline: 1px dotted ButtonText
+
+[type="checkbox"],
+[type="radio"]
+	box-sizing: border-box
+	padding: 0px
+
+[type="search"]
+	-webkit-appearance: textfield
+	outline-offset: -2px
+	&::-webkit-search-decoration
+		-webkit-appearance: none
+
+[type="number"]
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button
+		height: auto
+
+[type="checkbox"],
+[type="radio"]
+	box-sizing: border-box
+	padding: 0px
+
+::-webkit-file-upload-button
+	-webkit-appearance: button
+	font: inherit
+
+::-moz-focus-inner
+	padding: 0px
+	border: none
+
+::focus
+	outline: none

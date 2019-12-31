@@ -1,0 +1,20 @@
+//-
+	Mixins for the the Trinetix test task
+	Version: 1.0
+	Created: 29.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: Serge Tiutin
+	Website: https://example.com
+
+//- Meta data mixin
+
+mixin meta-data(title, description, href)
+	title=title
+	meta(name="description" content=description)
+	link(rel="canonical" href=href)
+
+//- Button mixin
+
+mixin link-btn(className, href, name, title)
+	a(class=className, href=href, title=title)= name

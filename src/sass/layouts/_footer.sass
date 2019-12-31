@@ -1,0 +1,103 @@
+/**
+	Footer styles for the for the Trinetix test task
+	Version: 1.0
+	Created: 29.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: Serge Tiutin
+	Website: https://example.com
+	*/
+
+.footer
+	background-color: $corporate-violet
+	padding: 0px
+	border-top: 4px solid $corporate-light-blue
+
+.top-footer
+	padding: 26px 0px 30px
+	.top-footer__col
+		p
+			font-size: 16px
+			font-family: $primary-light
+			font-weight: $light-weight
+			color: $corporate-white
+			line-height: 1.5
+			text-align: left
+			&:first-child
+				padding-bottom: 6px
+			a
+				display: block
+				font-family: $primary-light
+				font-weight: $light-weight
+				line-height: 1.3
+				text-align: left
+				transition: $primary-transition
+				&:first-child
+					font-size: 18px
+					color: $corporate-light-blue
+				&:last-child
+					font-size: 17px
+					color: $corporate-white
+				&:hover
+					cursor: pointer
+					&:first-child
+						color: $corporate-white
+					&:last-child
+						color: $corporate-light-blue
+
+.bottom-footer
+	padding: 29px 0px 30px
+	border-top: 1px solid $corporate-deep-blue
+	.row
+		align-items: flex-end
+
+.copyright
+	.copyright__description
+		font-size: 16px
+		font-family: $primary-light
+		font-weight: $light-weight
+		color: $corporate-white
+		line-height: 1.2
+		text-align: left
+		padding: 0px
+
+.footer-menu
+	.footer-menu__link
+		font-size: 16px
+		font-family: $primary-light
+		font-weight: $light-weight
+		color: $corporate-white
+		line-height: 1.2
+		text-align: left
+		transition: $primary-transition
+		text-transform: capitalize
+		margin: 0px 25px 0px 0px
+		&:hover
+			color: $corporate-light-blue
+			cursor: pointer
+
+.social-menu
+	position: relative
+	top: 5px
+	padding-left: 13px
+	.social-menu__link
+		width: 32px
+		height: 32px
+		margin-right: 10px
+		svg
+			width: 32px
+			height: 32px
+			.twitter-1, .google-1, .linkedin-1, .facebook-1, .twitter-2, .google-2, .linkedin-2, .facebook-2
+				transition: $secondary-transition
+		&:hover
+			svg
+				.twitter-1, .google-1, .linkedin-1, .facebook-1
+					fill: $corporate-white
+				.twitter-2
+					fill: #1da1f2
+				.google-2
+					fill: #dd4b39
+				.linkedin-2
+					fill: #0077b5
+				.facebook-2
+					fill: #3b5998

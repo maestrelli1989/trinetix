@@ -1,0 +1,57 @@
+/**
+	Scroll top styles the for the Trinetix test task
+	Version: 1.0
+	Created: 29.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: Serge Tiutin
+	Website: https://example.com
+	*/
+
+@keyframes breathing
+	0%
+		transform: scale(.95)
+	50%
+		transform: scale(1)
+	100%
+		transform: scale(.95)
+
+#scrollTopBtn
+	display: none
+	position: fixed
+	bottom: 50px
+	right: 150px
+	z-index: 99999
+	border: 2px solid $corporate-deep-blue
+	outline: 0
+	background-color: $corporate-deep-blue
+	color: $corporate-white
+	cursor: pointer
+	padding: 15px 20px
+	border-radius: $secondary-radius
+	transition: $primary-transition
+	animation: breathing 1s ease-out infinite normal
+	opacity: 1
+	&:active,
+	&:focus,
+	&:hover
+		text-decoration: none
+		background-color: $corporate-white 
+		color: $corporate-deep-blue
+	.fas
+		font-size: 20px
+
+@media screen and (max-width: 1400px)
+	
+	#scrollTopBtn
+		right: 50px
+
+@media screen and (max-width: 767px)
+	
+	#scrollTopBtn
+		right: 5px
+		padding: 13px 15px
+	
+	#scrollTopBtn
+		.fas
+			font-size: 16px

@@ -1,0 +1,57 @@
+/**
+	Mobile menu styles for the for the Trinetix test task
+	Version: 1.0
+	Created: 29.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: Serge Tiutin
+	Website: https://example.com
+	*/
+
+.mobile-menu
+	height: 0px
+	background-color: $corporate-violet
+	top: 0px
+	right: 0px
+	position: fixed
+	width: 100%
+	max-width: 100%
+	overflow: auto
+	transition: $primary-transition
+	z-index: 50000
+	&.mobile-menu--active
+		height: 100%
+
+.mobile-menu-wrapper
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	padding: 15px 0px 0px
+
+.mobile-menu-links__item
+	text-decoration: none
+	font-family: $primary-regular
+	color: $corporate-white
+	display: block
+	font-weight: $regular-weight
+	font-size: 20px
+	line-height: 32px
+	padding: 20px 15px 0px
+	text-align: left
+	&:hover
+		text-decoration: none
+	&.active
+		text-decoration: none
+		color: $corporate-white
+		position: relative
+		padding-left: 45px
+		&:after
+			font-family: "Font Awesome 5 Free"
+			content: "\f0da"
+			display: inline-block
+			padding-right: 3px
+			vertical-align: middle
+			font-weight: $bold-weight
+			position: absolute
+			top: 7px
+			left: 30px

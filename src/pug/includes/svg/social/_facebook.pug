@@ -1,0 +1,15 @@
+svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', viewBox="0 0 33 33", width='32px', height='32px')
+	defs
+		filter#Filter_facebook(filterUnits='userSpaceOnUse', x='12.5px', y='8.5px', width='13px', height='23px')
+			feoffset(in='SourceAlpha', dx='1', dy='1.732')
+			fegaussianblur(result='blurOut', stdDeviation='1')
+			feflood(flood-color='rgb(0, 0, 0)', result='floodOut')
+			fecomposite(operator='atop', in='floodOut', in2='blurOut')
+			fecomponenttransfer
+				fefunca(type='linear', slope='0.25')
+			femerge
+				femergenode
+				femergenode(in='SourceGraphic')
+	path.facebook-1(fill-rule='evenodd', stroke-width='1px', stroke='#ffffff', fill='#00172b', d='M17.500,3.801 C25.232,3.801 31.500,10.158 31.500,18.001 C31.500,25.844 25.232,32.202 17.500,32.202 C9.768,32.202 3.500,25.844 3.500,18.001 C3.500,10.158 9.768,3.801 17.500,3.801 Z')
+	g(filter='url(#Filter_facebook)')
+		path.facebook-2(fill-rule='evenodd', fill='#ffffff', d='M21.570,15.634 L18.650,15.634 L18.650,13.267 C18.650,12.576 18.888,12.085 19.234,12.085 C19.579,12.085 21.570,12.085 21.570,12.085 L21.570,9.126 L19.134,9.132 C15.892,9.132 15.145,11.225 15.145,12.676 L15.145,15.634 L12.809,15.634 L12.809,18.593 L15.145,18.593 C15.145,22.612 15.115,26.876 15.115,26.876 L18.650,26.876 C18.650,26.876 18.650,22.564 18.650,18.593 L20.986,18.593 L21.570,15.634 Z')

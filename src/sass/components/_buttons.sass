@@ -1,0 +1,56 @@
+/**
+	Buttons styles the for the Trinetix test task
+	Version: 1.0
+	Created: 29.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: Serge Tiutin
+	Website: https://example.com
+	*/
+
+.button
+	font-family: $primary-regular
+	font-weight: $regular-weight
+	text-transform: capitalize
+	text-align: center
+	transition: $primary-transition
+	border-radius: $primary-radius
+	display: inline-block
+	border-width: 1px
+	border-style: solid
+	&:active,
+	&:focus
+		outline: none
+		text-decoration: none
+	&:hover
+		cursor: pointer
+		text-decoration: none
+	&:disabled,
+	&.button--disabled
+		background-color: $corporate-gainsboro
+		border-color: $corporate-gainsboro
+		color: $corporate-white
+		pointer-events: none
+		font-size: 16px
+		line-height: 20px
+		padding: 6px 50px
+	&.button--blue
+		background-color: $corporate-light-blue
+		color: $corporate-white
+		font-size: 24px
+		line-height: 25px
+		border-color: $corporate-light-blue
+		padding: 12px 85px
+		&:hover
+			background-color: $corporate-white
+			color: $corporate-light-blue
+	&.button--white
+		background-color: $corporate-white
+		color: $corporate-light-blue
+		font-size: 16px
+		line-height: 20px
+		border-color: $corporate-light-blue
+		padding: 6px 50px
+		&:hover
+			background-color: $corporate-light-blue
+			color: $corporate-white
